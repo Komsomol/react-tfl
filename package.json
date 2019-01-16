@@ -1,0 +1,37 @@
+{
+  "name": "react-tfl",
+  "version": "0.0.1",
+  "description": "react with TFL live data refresh",
+  "main": "test-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mini": "npx terser -c -m -o public/js/main.min.js -- src/js/main.js",
+    "jsx": "npx babel --watch src/src --out-dir src/js --presets react-app/prod --plugins transform-es2015-modules-commonjs",
+    "wbp": "npx webpack --watch --config webpack.config.js --mode development"
+  },
+  "keywords": [
+    "tfl",
+    "react"
+  ],
+  "author": "farhad agzamov",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^9.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-react-app": "^3.1.2",
+    "dotenv": "^6.2.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "terser": "^3.14.1",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
+}
